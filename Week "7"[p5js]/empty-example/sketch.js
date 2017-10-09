@@ -1,4 +1,4 @@
-var bgColor = "green";
+var bgColor = "pink";
 var fSize = 200;
 
 var posX = 0;
@@ -24,12 +24,12 @@ function setup(){
 function draw(){
     strokeWeight(0)
     //Face
-    fill("pink");
+    fill("yellow");
     ellipse(posX, posY, fSize, fSize);
     
     //mouth
-    fill("red");
-    rect(posX - 50, posY + 50, 100, 20);
+    fill("black");
+    ellipse(posX + 30, posY + 50, 60, 40);
     
     //eyes
     fill(255);
@@ -44,9 +44,11 @@ function draw(){
     //mouthline
     stroke(125, 0, 0);
     strokeWeight(3);
-    line(posX - 50, posY + 60, posX + 50, posY + 60);
+    
 
-    //mole
-    point(posX + 20, posY + 10);
+    //nose
+    fill("orange");
+    ellipse(posX - 0, posY + 10, 7,7);
+    strokeWeight(1);
     
 }
