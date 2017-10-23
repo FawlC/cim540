@@ -22,33 +22,33 @@ function setup(){
 }
 
 function draw(){
-    strokeWeight(0)
-    //Face
+    //stick
+    fill("brown");
+    rect(posX - 0, posY + 170, 50 , 150);
+    
+    
+    strokeWeight(0);
+    //Body
     fill("yellow");
-    ellipse(posX, posY, fSize, fSize);
+    strokeWeight(3);
+    rect(posX - 80, posY - 20, 200, 205);
+    
     
     //mouth
     fill("black");
-    ellipse(posX + 30, posY + 50, 60, 40);
+    ellipse(posX + 20, posY + 130, 70, 50);
     
     //eyes
     fill(255);
-    ellipse(posX - 50, posY - 20, 20,40);
-    ellipse(posX + 50, posY - 20, 20,40);
+    ellipse(posX - 20, posY + 50, 40,40);
+    ellipse(posX + 60, posY + 50, 40,40);
     
     //pupils
     fill(0);
-    ellipse(posX - 50, posY - 10, 20, 20);
-    ellipse(posX + 50, posY - 10, 20, 20);
+    ellipse(posX - 30, posY + 50, 20, 20);
+    ellipse(posX + 50, posY + 50, 20, 20);
     
-    //mouthline
-    stroke(125, 0, 0);
-    strokeWeight(3);
-    
-
-    //nose
-    fill("orange");
-    ellipse(posX - 0, posY + 10, 7,7);
-    strokeWeight(1);
+      
+   
     
 }
