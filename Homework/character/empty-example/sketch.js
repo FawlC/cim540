@@ -45,10 +45,13 @@ function draw(){
     
     //pupils
     fill(0);
+    var noseWiggle = map(mouseX, 0, width, -30, 50);
     ellipse(posX - 30, posY + 50, 20, 20);
     ellipse(posX + 50, posY + 50, 20, 20);
+     rectMode(CENTER);
+        rect(centerX, centerY + 30, 50, 15, 5);
+        rect(centerX, centerY + 30, 50, 1, 1);
     
       
    
     
-}
