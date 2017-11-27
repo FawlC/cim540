@@ -24,7 +24,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(1000, 800);
     centerX = width / 2;
     centerY = height / 2;
 
