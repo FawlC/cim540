@@ -36,30 +36,16 @@ function setup() {
     bgChange1.position(100, 500);
     bgChange1.mousePressed(bgFunction1);
 
-    showHideButton = createButton('show hide');
+    showHideButton = createButton('ShowHide');
     showHideButton.position(200, 500);
     showHideButton.mousePressed(showHideFunction);
 
-    currentBgImage = bgImage;
+
 }
 
 function draw() {
-    image(currentBgImage, 0, 0);
-
-    if (changeColor == true) {
-        randomColor[0] = random(256);
-        randomColor[1] = random(256);
-        randomColor[2] = random(256);
-
-    }
-
-    if (showHide == true) {
-        fill(randomColor[0], randomColor[1], randomColor[2])
-}
-
-   if (showHide == true) {
-        fill(randomColor[0], randomColor[1], randomColor[2]);
-       
+    
+    
     //stick
     fill("brown");
     rect(posX - 0, posY + 170, 50 , 150);
@@ -102,8 +88,6 @@ function draw() {
     } else {
         changeColor = false;
     }
-
-}
 
 function bgFunction() {
     currentBgImage = bgImage;
