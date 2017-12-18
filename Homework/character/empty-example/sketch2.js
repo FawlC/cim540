@@ -45,7 +45,6 @@ function setup() {
 
 function draw() {
     
-    
     //stick
     fill("brown");
     rect(posX - 0, posY + 170, 50 , 150);
